@@ -1,9 +1,10 @@
 from random import randint
 
 
-def silgame():
+def silgame(getal):
     gamech= randint(0,100)
-    mynum= input("Enter your number between 0 and 100 here: ")
+    #mynum= input("Enter your number between 0 and 100 here: ")
+    mynum= int(getal)
     int(mynum)
 
     if gamech==mynum:

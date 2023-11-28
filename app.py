@@ -12,6 +12,6 @@ def OtherJSON():
     vara= 12
     return "{\Opdracht\": \"Hele andere reactie\" ,\"Aantal:\""+str(vara)+"\"}"
 
-@app.route("/game")
-def game1():
-    return silmethods.silgame()
+@app.route("/game/<getal>")
+def game1(getal):
+    return silmethods.silgame(getal)
